@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 1rem;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.julius-sans {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.archivo-narrow {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.source-sans {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.9rem;
+}
