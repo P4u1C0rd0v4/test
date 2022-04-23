@@ -7,7 +7,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif !important;
   font-size: 1rem;
   color: #222;
-  letter-spacing: 0.5px;
 }
 
 .julius-sans {
@@ -22,3 +21,48 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.9rem;
 }
+
+/* HOME */
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top: calc(50% - 25px) !important;
+  width: 40px !important;
+  height: 65px !important;
+  background: rgba(51, 51, 51, 0.7) !important  ;
+  opacity: 0;
+}
+
+.swiper-button-next {
+  right: 0 !important;
+  border-radius: 10px 0 0 10px;
+}
+
+.swiper-button-prev {
+  left: 0 !important;
+  border-radius: 0 10px 10px 0;
+}
+
+.swiper:hover .swiper-button-next, .swiper:hover .swiper-button-prev {
+  opacity: 1;
+}
+
+.swiper-button-next {
+  width: 45px;
+  height: 65px;
+  background: black;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 15px !important;
+  color: white;
+}
+
+.swiper-pagination {
+  bottom: 5px !important;
+}
+
+/* HOME */
