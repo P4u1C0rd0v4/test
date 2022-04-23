@@ -1,31 +1,6 @@
 const Footer = () => {
   return (
     <footer className="">
-      <div className="bg-gray-100 py-6">
-        <h5 className="font-semibold text-center text-xl text-black">Nuestros Servicios</h5>
-        <div className="container grid grid-cols-4 mx-auto pt-10 pb-6 text-gray-500 text-center">
-          <div className="col-span-1">
-            <div className="w-28 h-28 mb-4 mx-auto rounded-full bg-white text-[4rem]"><i class="bi bi-shop-window align-middle"></i></div>
-            <p className="mb-2 font-semibold text-xl text-black">Consulta de Stock</p>
-            <p>¡Exclusivo para clientes Inkaclub! Consulta el stock del producto que  buscas en tu boticas más cercana.</p>
-          </div>
-          <div className="col-span-1">
-            <div className="w-28 h-28 mb-4 mx-auto rounded-full bg-white text-[4rem]"><i class="bi bi-geo-alt align-middle"></i></div>
-            <p className="mb-2 font-semibold text-xl text-black">¡Sigue tu pedido!</p>
-            <p>Conoce el estado en el que se  encuentra tu pedido</p>
-          </div>
-          <div className="col-span-1">
-            <div className="w-28 h-28 mb-4 mx-auto rounded-full bg-white text-[4rem]"><i class="bi bi-telephone-plus align-middle"></i></div>
-            <p className="mb-2 font-semibold text-xl text-black">Inkafono</p>
-            <p>También puedes hacer tus pedidos llamándonos al (01) 314 2020.</p>
-          </div>
-          <div className="col-span-1">
-            <div className="w-28 h-28 mb-4 mx-auto rounded-full bg-white text-[4rem]"><i class="bi bi-file-medical align-middle"></i></div>
-            <p className="mb-2 font-semibold text-xl text-black">Consulta de Salud Online Gratuita</p>
-            <p>¡Exclusivo para clientes Inkaclub! Pregunta sobre cualquier inquietud médica tuya o de tu familia.</p>
-          </div>
-        </div>
-      </div>
       <div className="bg-white py-8">
         <div className="container grid grid-cols-12 mx-auto">
           <div className="col-span-3">
