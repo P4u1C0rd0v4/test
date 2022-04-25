@@ -67,13 +67,13 @@ const Footer = () => {
             <h4 className="font-semibold">Síguenos</h4>
             <ul className="flex justify-start items-center text-2xl">
               <li className="py-2 pr-3">
-                <i class="bi bi-facebook"></i>
+                <i className="bi bi-facebook"></i>
               </li>
               <li className="py-2 pr-3">
-                <i class="bi bi-instagram"></i>
+                <i className="bi bi-instagram"></i>
               </li>
               <li className="py-2 pr-3">
-                <i class="bi bi-linkedin"></i>
+                <i className="bi bi-linkedin"></i>
               </li>
             </ul>
             <h4 className="mt-3 font-semibold">Medio de Pago</h4>

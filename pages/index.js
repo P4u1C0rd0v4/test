@@ -1,6 +1,6 @@
 import Layout from '../src/components/layout';
 
-import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Autoplay, EffectCreative } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -11,22 +11,34 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 const Home = () => {
   return (
     <Layout>
-      <section className="bg-gray-100">
-        <div className="w-full h-[29rem] 2xl:h-[32.5rem]">
+      <section className="bg-gray-100 pt-[8.5rem]">
+        <div className="w-full h-[27rem] 2xl:h-[30rem]">
           <Swiper
-            className="w-full h-full pb-8"
-            pagination={{ clickable: true }}
             navigation
-            autoplay={{ delay: 3000 }}
             loop={true}
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000 }}
+            grabCursor={true}
+            effect={"creative"}
+            modules={[ EffectCreative ]}
+            creativeEffect={{
+              prev: {
+                shadow: true,
+                translate: ["-20%", 0, -1],
+              },
+              next: {
+                translate: ["100%", 0, 0],
+              },
+            }}
+            className="w-full h-full bg-gray-100 pb-8"
           >
             <SwiperSlide>
-              <div className="w-full h-[calc(100%-30px)]">
+              <div className="w-full h-[calc(100%-23px)]">
                 <img className="w-full h-full object-cover" src="https://images.ctfassets.net/l9x8e72nkkav/788OaPBQjxzjVd4bPCPO6V/617ac67af3cd9b525e6f4532439f63a3/inka_web_slide1-Cuidatusalud_Servicioexpress.jpg" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="w-full h-[calc(100%-30px)]">
+              <div className="w-full h-[calc(100%-23px)]">
                 <div className="w-1/2 h-full relative inline-block">
                   <div className="w-full h-full absolute top-0 left-0 flex justify-center items-center hover:bg-black hover:bg-opacity-60 opacity-0 hover:opacity-100">
                     <button className="btn bg-green-700 rounded-3xl py-2 px-5 text-white">
@@ -46,7 +58,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="w-full h-[calc(100%-30px)]">
+              <div className="w-full h-[calc(100%-23px)]">
                 <img className="w-full h-full object-cover" src="https://images.ctfassets.net/l9x8e72nkkav/5Jsb5IaXItnoFJq7C1pBRf/69ac475508d36897c846df1c8d63e7ff/inka_cw_web_slide-1k-todos-los-dias.jpg" />
               </div>
             </SwiperSlide>
@@ -54,10 +66,10 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-gray-100">
-        <div className="w-11/12 2xl:w-full h-full max-w-[96rem] mx-auto py-8 px-2">
+        <div className="w-11/12 h-full max-w-[96rem] mx-auto py-8 px-2">
           <img className="rounded-2xl" src="https://images.ctfassets.net/l9x8e72nkkav/1tejNnqrusnyQbDjIKQCu4/299c94792137a8ef135238c4c19a8a0c/inka_web_regularx1-Cross-2daMitaddePrecio_Ninet_Babylac_Secos_Geriaplus.jpg" />
         </div>
-        <div className="w-11/12 2xl:w-full h-full max-w-[96rem] mx-auto grid grid-cols-4 pt-8">
+        <div className="w-11/12 h-full max-w-[96rem] mx-auto grid grid-cols-4 pt-8">
           <div className="col-span-1 p-2">
             <img className="rounded-2xl" src="https://images.ctfassets.net/l9x8e72nkkav/7iAsiawNnj4UA3KG12HV3t/8808661ff01d72dd42520fb7bde5fddc/inka_web_regular_x4_Pan__itosHumedos-Enfagrow-Perfumeri__aInfantil-Pediasure_1.jpg" />
           </div>
@@ -79,7 +91,7 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-gray-100">
-        <div className="w-11/12 2xl:w-full h-full max-w-[96rem] mx-auto pt-4 pb-8">
+        <div className="w-11/12 h-full max-w-[96rem] mx-auto pt-4 pb-8">
           <p className="font-semibold text-xl px-2">
             Comprometidos con Proteger la Salud de tu familia
             <span className="ml-12 text-[#16a2ff] text-sm">Ver más productos</span>
@@ -144,26 +156,29 @@ const Home = () => {
         </div>
       </section>
       <section>
+        
+      </section>
+      <section>
         <div className="bg-gray-100 py-6">
           <h5 className="font-semibold text-center text-xl text-black">Nuestros Servicios</h5>
           <div className="container grid grid-cols-4 mx-auto pt-10 pb-6 text-gray-500 text-center">
             <div className="col-span-1">
-              <div className="w-28 h-28 mb-4 mx-auto rounded-full bg-white text-[4rem]"><i class="bi bi-shop-window align-middle"></i></div>
+              <div className="w-28 h-28 mb-4 mx-auto rounded-full bg-white text-[4rem]"><i className="bi bi-shop-window align-middle"></i></div>
               <p className="mb-2 font-semibold text-xl text-black">Consulta de Stock</p>
               <p>¡Exclusivo para clientes Inkaclub! Consulta el stock del producto que  buscas en tu boticas más cercana.</p>
             </div>
             <div className="col-span-1">
-              <div className="w-28 h-28 mb-4 mx-auto rounded-full bg-white text-[4rem]"><i class="bi bi-geo-alt align-middle"></i></div>
+              <div className="w-28 h-28 mb-4 mx-auto rounded-full bg-white text-[4rem]"><i className="bi bi-geo-alt align-middle"></i></div>
               <p className="mb-2 font-semibold text-xl text-black">¡Sigue tu pedido!</p>
               <p>Conoce el estado en el que se  encuentra tu pedido</p>
             </div>
             <div className="col-span-1">
-              <div className="w-28 h-28 mb-4 mx-auto rounded-full bg-white text-[4rem]"><i class="bi bi-telephone-plus align-middle"></i></div>
+              <div className="w-28 h-28 mb-4 mx-auto rounded-full bg-white text-[4rem]"><i className="bi bi-telephone-plus align-middle"></i></div>
               <p className="mb-2 font-semibold text-xl text-black">Inkafono</p>
               <p>También puedes hacer tus pedidos llamándonos al (01) 314 2020.</p>
             </div>
             <div className="col-span-1">
-              <div className="w-28 h-28 mb-4 mx-auto rounded-full bg-white text-[4rem]"><i class="bi bi-file-medical align-middle"></i></div>
+              <div className="w-28 h-28 mb-4 mx-auto rounded-full bg-white text-[4rem]"><i className="bi bi-file-medical align-middle"></i></div>
               <p className="mb-2 font-semibold text-xl text-black">Consulta de Salud Online Gratuita</p>
               <p>¡Exclusivo para clientes Inkaclub! Pregunta sobre cualquier inquietud médica tuya o de tu familia.</p>
             </div>
